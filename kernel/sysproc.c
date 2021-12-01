@@ -53,6 +53,14 @@ sys_sbrk(void)
 }
 
 uint64
+sys_fmem(void)
+{
+  int size = 42;
+
+  return size;
+}
+
+uint64
 sys_sleep(void)
 {
   int n;
