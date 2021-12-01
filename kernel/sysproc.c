@@ -55,8 +55,7 @@ sys_sbrk(void)
 uint64
 sys_fmem(void)
 {
-  int size = 42;
-
+  int size = kfreesize();
   return size;
 }
 
